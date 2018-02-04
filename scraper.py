@@ -7,6 +7,6 @@ r = requests.get(url)
 
 soup = BeautifulSoup(r.content,'lxml')
 
-links = soup.find_all("a")
+links = soup.find_all("div")
 
 print links
