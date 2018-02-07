@@ -7,4 +7,5 @@ r = requests.get(url)
 
 soup = BeautifulSoup(r.content,"lxml")
 
-print soup.prettify
+link = soup.find_all("html")
+print link
